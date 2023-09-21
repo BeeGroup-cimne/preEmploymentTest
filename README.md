@@ -1,6 +1,6 @@
 # PRE-EMPLOYMENT TEST
-To participate in this test, clone the project and solve the different problems. Upload the 
-solution in a branch and placing a pull request to the main.
+To participate in this test, fork the project and solve the different problems. Upload the 
+solution in a pull request to this project.
 
 ### Problem 1: Architecture (discussion)
 In a project, we need to gather electricity consumption and weather data time series  continuously from many 
