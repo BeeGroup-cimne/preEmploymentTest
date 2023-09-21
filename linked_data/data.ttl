@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix s4blg: <https://saref.etsi.org/saref4bldg/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+ex:b1 rdf:type s4blg:Building ;
+    foaf:name "Edifici A" ;
+    ex:tipus "Oficina" ;
+    vcard:street-name "Carrer Major, 123" ;
+    ex:ciutat "Ciutat Fictícia" ;
+    ex:codiPostal "08001" ;
+    geo:lat "41.123456" ;
+    s4blg:contains ex:d3, ex:d4 ;
+    geo:long "2.987654" .
+
+ex:b2 rdf:type s4blg:Building ;
+    foaf:name "Edifici B" ;
+    ex:tipus "Residencial" ;
+    vcard:street-name "Avinguda Gran, 456" ;
+    ex:ciutat "Ciutat Fictícia" ;
+    ex:codiPostal "08002" ;
+    geo:lat "41.234567" ;
+    s4blg:contains ex:d1, ex:d2 ;
+    geo:long "2.876543" .
+
+ex:b3 rdf:type s4blg:Building ;
+    foaf:name "Edifici C" ;
+    ex:tipus "Residencial" ;
+    vcard:street-name "Avinguda de Baix, 456" ;
+    ex:ciutat "Ciutat Fictícia" ;
+    ex:codiPostal "08002" ;
+    geo:lat "41.200537" ;
+    s4blg:contains ex:d7, ex:d8 ;
+    geo:long "2.884343" .
+
+ex:b4 rdf:type s4blg:Building ;
+    foaf:name "Edifici D" ;
+    ex:tipus "Parc de Bombers" ;
+    vcard:street-name "Avinguda Petita, 456" ;
+    ex:ciutat "Ciutat Fictícia" ;
+    ex:codiPostal "08002" ;
+    geo:lat "41.254367" ;
+    s4blg:contains ex:d5, ex:d6 ;
+    geo:long "2.855323" .
+
+ex:d1 rdf:type s4blg:Device ;
+    ex:tipus "ELECTRIC" .
+ex:d2 rdf:type s4blg:Device ;
+     ex:tipus "TEMPREATURA" .
+ex:d3 rdf:type s4blg:Device ;
+     ex:tipus "GAS" .
+ex:d4 rdf:type s4blg:Device ;
+     ex:tipus "ELECTRIC" .
+ex:d5 rdf:type s4blg:Device ;
+     ex:tipus "TEMPREATURA" .
+ex:d6 rdf:type s4blg:Device ;
+     ex:tipus "GAS" .
+ex:d7 rdf:type s4blg:Device ;
+     ex:tipus "TEMPREATURA" .
+ex:d8 rdf:type s4blg:Device ;
+     ex:tipus "ELECTRIC" .
+ex:d9 rdf:type s4blg:Device ;
+     ex:tipus "TEMPREATURA" .
+ex:d10 rdf:type s4blg:Device ;
+     ex:tipus "GAS" .
+
+
