@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web API</title>
+    <style>
+        body {
+            background-color: #333; /* Dark background color */
+            color: white;           /* White text color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            background-color: #007bff; /* Blue button background color */
+            color: white;              /* White text color for the button */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <button id="helloButton">Click me!</button>
+    <p id="helloMessage"></p>
+
+    <script>
+        document.getElementById('helloButton').addEventListener('click', () => {
+            window.location.href = 'http://localhost:3000/data';
+        });
+    </script>
+</body>
+</html>
