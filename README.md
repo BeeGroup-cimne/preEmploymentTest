@@ -3,11 +3,14 @@ To participate in this test, fork the project and solve the different problems. 
 solution in a pull request to this project.
 
 ### Problem 1: Architecture (discussion)
-In a project, we need to gather electricity consumption and weather data time series  continuously from many 
-locations, and store it in a database. The data we are gathering at certain points can be more than the data 
+In a project, we need to gather electricity consumption and weather data time series  continuously from some very slow api,
+and store them in a database. The data we are gathering at certain points can be more than the data 
 that can be processed by the system. 
 
-Propose an architecture to be able to gather and store this data (protocols, databases, communications).
+Also, the api is very slow and the process to gather it has to be parallelized.
+
+Propose an architecture to be able to gather and store this data. Propose the different protocols, databases to use,
+technologies, etc).
 
 
 ### Problem 2: Data management
