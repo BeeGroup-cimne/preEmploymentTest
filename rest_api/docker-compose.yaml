@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db    
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Mynewpassword1*
+      MYSQL_DATABASE: daily_time_series_db
+
+
+  db:
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: Fv11032010
+      MYSQL_DATABASE: daily_time_series_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Mynewpassword1*
