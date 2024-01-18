@@ -35,7 +35,6 @@ ex:b3 rdf:type s4blg:Building ;
     geo:lat "41.200537" ;
     s4blg:contains ex:d7, ex:d8 ;
     geo:long "2.884343" .
-
 ex:b4 rdf:type s4blg:Building ;
     foaf:name "Edifici D" ;
     ex:tipus "Parc de Bombers" ;
@@ -52,7 +51,7 @@ ex:d2 rdf:type s4blg:Device ;
      ex:tipus "TEMPREATURA" .
 ex:d3 rdf:type s4blg:Device ;
      ex:tipus "GAS" .
-ex:d4 rdf:type s4blg:Device ;
+ex:d4 rdf:type s4blg:Device ; 
      ex:tipus "ELECTRIC" .
 ex:d5 rdf:type s4blg:Device ;
      ex:tipus "TEMPREATURA" .
