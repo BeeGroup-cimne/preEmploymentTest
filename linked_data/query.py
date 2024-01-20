@@ -5,7 +5,6 @@ def get_devices_of_buildings_query(building):
     return f"""
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
     PREFIX s4blg: <https://saref.etsi.org/saref4bldg/> 
-    PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
     PREFIX ex: <http://example.org/> 
 
     SELECT ?device ?deviceType
