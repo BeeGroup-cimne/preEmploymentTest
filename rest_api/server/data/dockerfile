@@ -1,0 +1,8 @@
+FROM python:3.9.18-slim-bullseye
+
+ADD ./*.py .
+ADD ./*.csv .
+ADD ./requirements.txt .
+
+RUN pip install -r ./requirements.txt
+CMD [ "python","load_data.py" ]
