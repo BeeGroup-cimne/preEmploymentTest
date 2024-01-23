@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import time
 
 # Llegim i filtrem files i columnes del fitxer que conté les dades
 file_path = 'data_management/data_2019.xls'
@@ -26,7 +25,7 @@ for index, row in df.iterrows():
     ts_df.loc[date_range, 'kwh'] = average_kwh
 
 # Mostrem resultats
-#print(ts_df)
+print(ts_df)
     
 plt.figure(figsize=(10, 6))
 plt.plot(ts_df.index, ts_df['kwh'], label='Consum Promig Diari')
