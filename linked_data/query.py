@@ -3,18 +3,35 @@ import rdflib
 
 def get_devices_of_buildings_query(building):
     return """
+    PREFIX ex: <http://example.org/>
+    PREFIX s4blg: <https://saref.etsi.org/saref4bldg/>
+    SELECT ?device
+    WHERE {
+        """ + building + """ s4blg:contains ?device .
+    }
     """
 
 
 def get_all_type_buildings_query(type):
-    return """
+    return f"""
+    PREFIX ex: <http://example.org/>
+    PREFIX s4blg: <https://saref.etsi.org/saref4bldg/>
+    SELECT ?building
+    WHERE {{
+        ?building rdf:type s4blg:Building ;
+                  ex:tipus "{type}" .
+    }}
     """
 
 
 def get_all_buildings_query():
     return """
+    PREFIX s4blg: <https://saref.etsi.org/saref4bldg/>
+    SELECT ?building
+    WHERE {
+        ?building rdf:type s4blg:Building .
+    }
     """
-
 
 if __name__ == '__main__':
     g = rdflib.graph.Graph()
