@@ -1,0 +1,5 @@
+duckdb
+fastapi
+uvicorn
+numpy
+pandas
