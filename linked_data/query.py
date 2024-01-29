@@ -3,18 +3,33 @@ import rdflib
 
 def get_devices_of_buildings_query(building):
     return """
-    """
+    SELECT ?devices
+    WHERE{
+    ?uri s4blg:contains ?devices;
+    FILTER (?uri=%s)
+    }
+        """ %(building)
 
 
 def get_all_type_buildings_query(type):
     return """
-    """
+    SELECT ?uri
+    WHERE{
+    ?uri rdf:type s4blg:Building;
+        ex:tipus '%s'
+    }
+    """ %(type)
 
 
 def get_all_buildings_query():
     return """
+    SELECT ?uri
+    WHERE{
+    ?uri rdf:type s4blg:Building
+    }
     """
 
+    
 
 if __name__ == '__main__':
     g = rdflib.graph.Graph()
